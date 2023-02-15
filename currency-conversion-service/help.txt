@@ -1,0 +1,11 @@
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost:8000/currency-exchange/from/EUR/to/INR
+http://localhost:8001/currency-exchange/from/EUR/to/INR
+
+http://localhost:8888/limits-service/qa
+http://localhost:8080/limits
+
+http://localhost:8000/h2-console/login.do
+
+
+https://github.com/in28minutes/spring-microservices-v2
