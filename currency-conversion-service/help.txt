@@ -1,11 +1,47 @@
-http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
-http://localhost:8000/currency-exchange/from/EUR/to/INR
-http://localhost:8001/currency-exchange/from/EUR/to/INR
 
+Limit service:
 http://localhost:8888/limits-service/qa
 http://localhost:8080/limits
 
+Currency conversion service:
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+
+Currency exchange service:
+http://localhost:8000/currency-exchange/from/EUR/to/INR
+http://localhost:8001/currency-exchange/from/EUR/to/INR
+
+H2 local console:
 http://localhost:8000/h2-console/login.do
 
 
+Eureka naming server:
+http://localhost:8761
+
+Api-gateway:
+http://localhost:8765
+
+Tutorial:
 https://github.com/in28minutes/spring-microservices-v2
+
+-----------------
+
+
+Lower Case
+
+- http://localhost:8765/currency-exchange/currency-exchange/from/USD/to/INR
+
+- http://localhost:8765/currency-conversion/currency-conversion/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+
+
+Custom Routes using ApiGatewayConfiguration
+
+- http://localhost:8765/currency-exchange/from/USD/to/INR
+
+- http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+- http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
