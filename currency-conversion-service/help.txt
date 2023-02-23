@@ -20,8 +20,12 @@ http://localhost:8761
 Api-gateway:
 http://localhost:8765
 
+zipkin (distrubuted tracing server):
+http://localhost:9411/zipkin/
+
 Tutorial:
 https://github.com/in28minutes/spring-microservices-v2
+https://github.com/in28minutes/spring-microservices-v3
 
 -----------------
 
@@ -35,3 +39,29 @@ Custom Routes using ApiGatewayConfiguration
 - http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
 
 - http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
+
+------------------
+
+docker commands:
+
+start a docker image:
+- docker run -p <host port>:<container port> <docker imagename>:<version>
+
+stop a docker container
+- docker container stop <container id>
+
+list all docker container running
+- docker container ls 
+
+list all running and also stopped containers
+- docker container ls -a
+
+list all docker images
+- docker images
+
+see logs of a particular docker container
+- docker logs -f <container id>
+
+docker run -p 9411:9411 openzipkin/zipkin:2.23
+
+
