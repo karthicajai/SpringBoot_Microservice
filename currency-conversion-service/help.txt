@@ -44,6 +44,12 @@ Custom Routes using ApiGatewayConfiguration
 
 docker commands:
 
+command to run a single microservice
+docker run -p 8000:8000 kkimg/currency-exchange-service:0.0.1-SNAPSHOT
+
+command to run all microservices after it was added to docker-compose.yaml file
+docker-compose up
+
 start a docker image:
 - docker run -p <host port>:<container port> <docker imagename>:<version>
 
@@ -64,4 +70,8 @@ see logs of a particular docker container
 
 docker run -p 9411:9411 openzipkin/zipkin:2.23
 
+------
+eclipse:
 
+Maven run configuration to build docker image for a microservice
+spring-boot:build-image
